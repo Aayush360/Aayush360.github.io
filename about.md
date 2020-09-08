@@ -1,4 +1,7 @@
-# About
+# About Me
 
-This is where you put the contents of your *About* page. Like all your pages, it's in [Markdown](https://guides.github.com/features/mastering-markdown/) format.
+I love exploring and writing.
+
+Aritificial Intelligence - especially Computer Vision implementation - is what I love exploring, building and implementing.
+I am writing this blog to track my progress over time, may be someday this might help someone as well. :D
 
