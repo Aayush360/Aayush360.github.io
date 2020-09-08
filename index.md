@@ -1,6 +1,6 @@
-Hello and welcome to my blog.
+## Welcome Home
+
 
 ![Image Boudhanath Stupa](images/IMG_3543.png)
 
-## Welcome Home
 
