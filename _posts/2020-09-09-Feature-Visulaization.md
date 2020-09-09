@@ -1,5 +1,5 @@
 
-## What our Image-Recognizer Learned? 
+## What our Image-Recognizer Learns? 
 
 *Learnings from [paper]((https://arxiv.org/pdf/1311.2901.pdf)) by Zeiler and Fergus. They extracted these activations while using AlexNet (consisted of 5 layers) trained on ImageNet dataset.*
 
