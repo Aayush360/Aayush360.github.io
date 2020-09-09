@@ -1,5 +1,7 @@
 # About Me
 
+![Image Boudhanath Stupa](images/16781245.jpeg)
+
 I am a Computer Science Information Tech. (CSIT) Student.
 
 I love exploring and writing.
