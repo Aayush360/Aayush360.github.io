@@ -39,6 +39,7 @@ Thus small change in w does not bring change in the accuracy (there is no change
 
 
 Learning happens by updating the weight: **w_new = w_old - learning_rate * change_in_output_wrt_change_in_weights**
+This is also called an optimization step.
 when gradient is 0, it means the term : change_in_output_wrt_change_in_weights is 0. In this case the above update rule becomes: **w_new = w_old - learning_rate * 0** 
 This gives: w_new = w_old; thus the weight new changes and no learning happens. 
 
@@ -55,3 +56,10 @@ This is the function that takes any input value, positive or negative and smoosh
 For larger positive value, it gives output very close to 1; and for larger negative values, it gives output very close to 0.
 If we give 0 as an input, it outputs 0.5 : 1/(1+exp(-0))=0.5.
 *Note: Although it is non-linear function, if we consider its small middle part close to 0, it resembles a linear function.*
+
+**MiniBatch Tradeoff**
+
+If you use minibatch size that is too small, you would get unstable gradient (utilize very little information from small set of examples or mini-batches) and the loss function might never converge -wander near optimum value.
+If you use minibatch size that is too large, you will have to wait too long to get the insight of how well your model is doing. But this is stable.
+We have to choose mini-batch size that is neither too small or too big. 
+Also, in each epoch we randomly shuffle the training data to make a mini-batch. 
