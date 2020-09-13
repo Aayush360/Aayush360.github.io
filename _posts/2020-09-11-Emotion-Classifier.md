@@ -1,4 +1,4 @@
-## Building Emotion Classfier:
+## Building an Emotion Classfier:
 
 Trying out Bear Classifer with different dataset to make an Emotion Classifier:
 
