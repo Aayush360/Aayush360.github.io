@@ -41,3 +41,17 @@ Thus small change in w does not bring change in the accuracy (there is no change
 Learning happens by updating the weight: **w_new = w_old - learning_rate * change_in_output_wrt_change_in_weights**
 when gradient is 0, it means the term : change_in_output_wrt_change_in_weights is 0. In this case the above update rule becomes: **w_new = w_old - learning_rate * 0** 
 This gives: w_new = w_old; thus the weight new changes and no learning happens. 
+
+**Why loss must be a sensible function**
+
+Loss is a function our model implements for learning and improving on it's own. Unlike, accuracy which is used often by human to get insight of the model performance. It is important that we learn to focus on these metrics, rather than the loss, when judging the performance of the model.
+
+While choosing a loss function we should choose one that is reasonably smooth (less bumps and plateaus) so that it can be optimized using the gradient.
+The loss function is calculated for each item in our datset and at the end of the epochs the loss values are all averaged and the overall mean is reported for the epoch.
+
+**Sigmoid Activation Funtion**
+
+This is the function that takes any input value, positive or negative and smooshes it into an output value bwtween 0 and 1.
+For larger positive value, it gives output very close to 1; and for larger negative values, it gives output very close to 0.
+If we give 0 as an input, it outputs 0.5 : 1/(1+exp(-0))=0.5.
+*Note: Although it is non-linear function, if we consider its small middle part close to 0, it resembles a linear function.*
