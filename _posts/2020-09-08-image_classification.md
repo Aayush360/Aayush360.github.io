@@ -99,3 +99,22 @@ tensor(1.7790)
 
 
 
+**Finding the Learning rate**
+
+Start with very very small value of learning rate to ensure that the model doesn't overshoot the minimum value. Gradually increase the learning rate by some percentage until the loss starts to get worse. Stop and do one of the following:
+1. choose the learning rate whose loss was minimum and divide the magnitude of that learning rate by 10.
+2. last point where the loss was clearly decreasing - looking at the learning curve.
+
+
+**Descriminative Learning Rate**
+
+While using pretrained model, the former layer which learns simple features like edges and corners could be useful for majority of task, so the weights obtained
+from these pretrained model needs little adjustment. Thus for earlier layers we use smaller learning rate.
+But for later layers which learn more complex features like: eyes, faces, patterns could not be used in car classification task. This is because the pretrained model was trained on the (say, human face) it might not generalize well for car classification task. Thus, the weights in the later layers of the pretained model 
+needs more adjustment and tuning. This is why, we use larger learning rate for later layers. Especially, to newly added layers where we initialized the weights randomly. 
+
+
+
+
+
+
