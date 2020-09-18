@@ -9,7 +9,18 @@ We can also search for other people's code which resemble our project plan(probl
 
 **How a tensor differs from Numpy array**.
 
+Numpy does not support using the GPU or calculating gradients whereas PyTorch tensor supports both.
+
+Numpy array a is multidimensional table of data, with all items of the same type.
+
+Unlike Numpy array, tensor cannot have jagged structure and also has a restriction that it cannot use any old type- it has to use a single basic numeric type for all components. But like Numpy array, it is also a multidimensional tabel of data, with all items being the same type.
+
+
+Rank of a tensor is the number of dimension it has whereas, shape of a tensor is number of elements(pixels) in each dimension.
+For example, in Pytorch if shape of a tensor is [200,30,30], it means we have 200 images each having height and width of 30 pixels. 
+
 **Concept of Broadcasting in Pytorch (also, applicable to Numpy)**:
+
 Expands the tensor with smaller rank to have the same size as the one with higher rank.
 A simple example would be adding a real number to a list: [1,2,3] + 3 = [4,5,6]. Here 3 is being broadcasted to entire list of [1,2,3] and added to individual element.
 We dont need to tell the rank of 3 explicitly. 
