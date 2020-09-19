@@ -29,6 +29,8 @@ opt.LR is specified lower learning rate
 epochCounter is the number of epochs of trainig caculcated as (no. of training example / batch_size)
 lr is computer learning rate
 
+![Triangular Learning rate policy](images/CLR.png)
+
 
  The policy is called traingular because of the two parameter defined : stepsize (half the period or cycle length) and max_lr is maximul learning rate boundary.
  
