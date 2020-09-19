@@ -2,6 +2,13 @@
 
 **From further research portion of Deep Learning for Coders Book(Chapter 5: Image Classification)**
 
+This is my first experience (formally) reading a research paper and writing a blog on it. I have read few papers before like: paper on FaceNet and what CNN learns.
+Although I didn't absorb everything from it, following are the things I could make sense of.I have customized to a little extent although many sentences and phrases are exerpt from the paper itself.
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 For training a deep neural network, we have to perform lot of hyperparameter tuning. Finding the optimal value for hyperparameters like: learning rate, mini batch
 size, no of hidden units for each layers, number of layers, beta parameter in adam optimizer etc. for a deep neural network is crucial for better performance of our 
 model so that our model generalizes in the real world. 
@@ -60,3 +67,5 @@ choices for the bounds.
 
 This LR range test provides good LR value and a good range. Compare runs with fixed LR vs CLR with this range. Whichever wins can be used with confidence for rest of 
 one's experiment with the new architecture or datset.
+ 
+                                                **The End**
