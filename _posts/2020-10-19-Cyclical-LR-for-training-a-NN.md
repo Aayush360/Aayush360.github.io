@@ -1,4 +1,4 @@
-#Reading paper: Cyclical Learning rates for training Neural Network
+# Reading paper: Cyclical Learning rates for training Neural Network
 
 **From further research portion of Deep Learning for Coders Book(Chapter 5: Image Classification)**
 
