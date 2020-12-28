@@ -19,6 +19,8 @@
 2. Download the latest jar file from : https://mvnrepository.com/artifact/org.eclipse.platform/org.eclipse.swt.cocoa.macosx.x86_64
 
    Replace the original 'swt.jar' file with the jar file you just downloaded. The swt.jar file is located in **libswt/osx64** folder.
+   
+   **Note**:  The original 'swt.jar' file caused error while running the spoon.sh  
 
 3. Download Community edition of Pentaho : https://sourceforge.net/projects/pentaho/files/latest/download
 
@@ -30,4 +32,6 @@
    * cd /Applications/data-integration
   
    * ./spoon.sh
+   
+   After few seconds, you will have Pentaho running.
  
