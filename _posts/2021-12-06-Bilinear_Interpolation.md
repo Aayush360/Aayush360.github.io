@@ -1,27 +1,36 @@
-### Producing exact result like a Bilinear Interpolation Method
+## Producing exact result like a Bilinear Interpolation Method
 
-num_rows = img_gray.shape[0]
-num_cols = img_gray.shape[1]
+
+*get the shape of the source image before it is scaled*
+
+    num_rows = img_gray.shape[0]
+    num_cols = img_gray.shape[1]
 
 *setting the scaling matrix*
 
-S = np.array([[2,0],[0,2]])
+
+    S = np.array([[2,0],[0,2]])
+    
 
 *making the size of the destination image double than the source image*
 
-img_doubled = np.zeros((2*num_rows,2*num_cols),dtype='uint8')
+
+    img_doubled = np.zeros((2*num_rows,2*num_cols),dtype='uint8')
 
 *computing the inverse matrix*
-
-S_inv = np.linalg.inv(S)
+    
+    S_inv = np.linalg.inv(S)
+    
 
 *we shall be looping over the destination image*
 
-for new_row in range(img_doubled.shape[0]):
-    for new_col in range(img_doubled.shape[1]):
-        p_dash = np.array([new_row,new_col])
-        p = S_inv.dot(p_dash)
+
+    for new_row in range(img_doubled.shape[0]):
+         for new_col in range(img_doubled.shape[1]):
         
+            p_dash = np.array([new_row,new_col])
+            p = S_inv.dot(p_dash)
+
         
        
    *applying the floor and ceil method to get the 4 corners of the discrete pixels surrounding pixel p*
@@ -75,3 +84,10 @@ for new_row in range(img_doubled.shape[0]):
          
             img_doubled[new_row,new_col] = np.round((img_gray[row_min,col_min]*(1/w00)+img_gray[row_max,col_min]*(1/w01)+img_gray[row_min,col_max]*(1/w10)+img_gray[row_max,col_max]*(1/w11))/(sum_weight))
 
+**source image**
+
+![](/images/lena.jpg "original image")
+
+**resultant image after scaling by 2 and applying bilinear interpolation**
+
+![](/images/bilin1.png "after scaling by 2 and appling bilinear interpolation")
