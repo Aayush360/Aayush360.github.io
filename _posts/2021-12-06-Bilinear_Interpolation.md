@@ -1,4 +1,4 @@
-## Producing exact result like a Bilinear Interpolation Method
+## Producing exact result like the Bilinear Interpolation Method
 
 
 *get the shape of the source image before it is scaled*
